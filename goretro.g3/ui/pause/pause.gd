@@ -18,4 +18,4 @@ func continue_game():
 
 func goto_main_menu():
 	hide()
-	get_tree().change_scene("res://ui/title.tscn")
+	get_tree().change_scene_to_file("res://ui/title.tscn")

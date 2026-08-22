@@ -1,13 +1,14 @@
 [remap]
 
 importer="wav"
-type="AudioStreamSample"
-path="res://.import/pick.wav-b17b8c29fa0741b8559963be492621af.sample"
+type="AudioStreamWAV"
+uid="uid://b2aqvftffw5ic"
+path="res://.godot/imported/pick.wav-b17b8c29fa0741b8559963be492621af.sample"
 
 [deps]
 
 source_file="res://assets/sfx/pick.wav"
-dest_files=[ "res://.import/pick.wav-b17b8c29fa0741b8559963be492621af.sample" ]
+dest_files=["res://.godot/imported/pick.wav-b17b8c29fa0741b8559963be492621af.sample"]
 
 [params]
 

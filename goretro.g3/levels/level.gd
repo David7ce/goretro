@@ -1,10 +1,10 @@
 extends Node2D
 
-export var next_level = ""
+@export var next_level = ""
 var main_scene = "res://ui/title/title.tscn"
-onready var sound = $etc/sound
-onready var pause = $etc/pause
-onready var points = $etc/points
+@onready var sound = $etc/sound
+@onready var pause = $etc/pause
+@onready var points = $etc/points
 
 func _ready():
 	points.set_level_name(name)
@@ -15,7 +15,7 @@ func _process(_delta):
 
 	if Input.is_action_pressed("game_quit"):
 		# Quit game!
-		get_tree().change_scene(main_scene)
+		get_tree().change_scene_to_file(main_scene)
 	if Input.is_action_pressed("game_pause"):
 		# Pause game
 		pause.visible = true
@@ -27,6 +27,6 @@ func check_wall_damage():
 		return
 
 	if next_level == "":
-		get_tree().change_scene(main_scene)
+		get_tree().change_scene_to_file(main_scene)
 	else:
-		get_tree().change_scene("res://levels/" + next_level +".tscn")
+		get_tree().change_scene_to_file("res://levels/" + next_level +".tscn")

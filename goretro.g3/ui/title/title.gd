@@ -1,8 +1,8 @@
 extends Node2D
 
-onready var bomb = $margin/amin
-onready var timer = $timer
-export var next_level = "retro"
+@onready var bomb = $margin/amin
+@onready var timer = $timer
+@export var next_level = "retro"
 
 func _ready():
 	timer.start()
@@ -17,7 +17,7 @@ func _process(delta):
 
 func start_new_game():
 	Points.reset_current_score()
-	get_tree().change_scene("res://levels/" + next_level + ".tscn")
+	get_tree().change_scene_to_file("res://levels/" + next_level + ".tscn")
 
 func close_game():
 	get_tree().quit()

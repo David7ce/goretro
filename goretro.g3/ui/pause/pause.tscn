@@ -1,65 +1,65 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://assets/MinecraftRegular-Bmg3.otf" type="DynamicFontData" id=2]
+[ext_resource path="res://assets/MinecraftRegular-Bmg3.otf" type="FontFile" id=2]
 [ext_resource path="res://ui/pause/pause.gd" type="Script" id=3]
 
-[sub_resource type="DynamicFont" id=3]
+[sub_resource type="FontFile" id=3]
 size = 64
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=4]
+[sub_resource type="FontFile" id=4]
 font_data = ExtResource( 2 )
 
-[sub_resource type="DynamicFont" id=5]
+[sub_resource type="FontFile" id=5]
 font_data = ExtResource( 2 )
 
 [node name="pause" type="Node2D"]
-pause_mode = 2
+process_mode = 3
 z_index = 10
 script = ExtResource( 3 )
 
 [node name="background" type="ColorRect" parent="."]
-margin_right = 580.0
-margin_bottom = 599.0
+offset_right = 580.0
+offset_bottom = 599.0
 color = Color( 0, 0, 0, 0.235294 )
 
 [node name="v_container" type="VBoxContainer" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 127.0
-margin_right = 456.0
-margin_bottom = 592.0
+offset_left = 127.0
+offset_right = 456.0
+offset_bottom = 592.0
 alignment = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="title" type="Label" parent="v_container"]
-margin_top = 202.0
-margin_right = 329.0
-margin_bottom = 335.0
-custom_fonts/font = SubResource( 3 )
+offset_top = 202.0
+offset_right = 329.0
+offset_bottom = 335.0
+theme_override_fonts/font = SubResource( 3 )
 text = "Canarias
 Go Retro"
 align = 1
 autowrap = true
 
 [node name="continue" type="Button" parent="v_container"]
-margin_top = 339.0
-margin_right = 329.0
-margin_bottom = 362.0
-custom_colors/font_color_disabled = Color( 0.0705882, 0.0431373, 0.933333, 1 )
-custom_fonts/font = SubResource( 4 )
+offset_top = 339.0
+offset_right = 329.0
+offset_bottom = 362.0
+theme_override_colors/font_disabled_color = Color( 0.0705882, 0.0431373, 0.933333, 1 )
+theme_override_fonts/font = SubResource( 4 )
 text = "Cotinue"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="quit" type="Button" parent="v_container"]
-margin_top = 366.0
-margin_right = 329.0
-margin_bottom = 389.0
-custom_fonts/font = SubResource( 5 )
+offset_top = 366.0
+offset_right = 329.0
+offset_bottom = 389.0
+theme_override_fonts/font = SubResource( 5 )
 text = "Quit"
 __meta__ = {
 "_edit_use_anchors_": false

@@ -4,6 +4,7 @@ shader_type canvas_item;
 uniform float scanline_strength : hint_range(0.0, 1.0) = 0.5;
 uniform float scanline_count : hint_range(0.0, 1080.0) = 50.0;
 uniform float dot_size : hint_range(0.0, 10.0) = 2.0;
+uniform sampler2D SCREEN_TEXTURE : hint_screen_texture, filter_linear_mipmap;
 
 void fragment() {
     vec2 uv = SCREEN_UV;

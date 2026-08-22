@@ -44,8 +44,8 @@ position = Vector2( 592, 300 )
 shape = SubResource( 2 )
 
 [node name="background" type="ColorRect" parent="etc"]
-margin_right = 582.0
-margin_bottom = 600.0
+offset_right = 582.0
+offset_bottom = 600.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="points" parent="etc" instance=ExtResource( 10 )]

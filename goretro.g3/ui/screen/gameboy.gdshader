@@ -3,6 +3,7 @@ shader_type canvas_item;
 
 uniform float grid_size = 2.5; 
 uniform float grid_strength = 0.4;
+uniform sampler2D SCREEN_TEXTURE : hint_screen_texture, filter_linear_mipmap;
 
 void fragment() {
     // 1. Color base

@@ -4,6 +4,7 @@ uniform float noise_strength : hint_range(0.0, 0.5) = 0.45;
 uniform float scanline_strength : hint_range(0.0, 1.0) = 0.3;
 uniform float scanline_count : hint_range(0.0, 1080.0) = 100.0;
 uniform float dot_size : hint_range(0.0, 10.0) = 4.0;
+uniform sampler2D SCREEN_TEXTURE : hint_screen_texture, filter_linear_mipmap;
 
 void fragment() {
     vec2 uv = SCREEN_UV;

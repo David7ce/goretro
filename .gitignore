@@ -1,2 +1,13 @@
+# Editor / OS artifacts
 private/
 bin/
+docs/
+.superpowers/
+
+# Godot 4 generated cache (auto-created on open; must never be committed)
+.godot/
+*.godot/
+
+# Godot shader/editor cache artifacts
+*.vulkan.cache
+*.cache

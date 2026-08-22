@@ -1,8 +1,8 @@
 extends Node2D
 
-onready var level = $level
-onready var score = $score
-onready var high = $high
+@onready var level = $level
+@onready var score = $score
+@onready var high = $high
 
 func _ready():
 	level.text = ""
