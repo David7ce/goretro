@@ -2,7 +2,12 @@
 
 Juego de romper bloques (estilo Arkanoid) hecho con **Godot 4.7**. Basado en el
 proyecto original de [dvarrui/goretro](https://github.com/dvarrui/goretro),
-portado de Godot 3 a Godot 4.
+portado de Godot 3.5 a Godot 4.
+
+El original (Godot 3.5, carpeta `breakout.g3`) se mantiene en el repositorio de
+dvarrui, que tiene una historia propia distinta de esta: aquí no se fusiona para no
+duplicar el proyecto. Charla del original:
+[CGR: Charla de Godot Engine para juegos retro](https://youtu.be/-PUR4R8GKt4).
 
 ## Jugar
 
