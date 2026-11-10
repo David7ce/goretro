@@ -1,0 +1,9 @@
+# One line ending in the repository, whatever the editor writes. Godot saves LF.
+* text=auto
+
+# Never touch binary assets
+*.png binary
+*.ogg binary
+*.wav binary
+*.otf binary
+*.ctex binary

@@ -1,13 +1,20 @@
-# Editor / OS artifacts
-private/
-bin/
-docs/
-.superpowers/
-
-# Godot 4 generated cache (auto-created on open; must never be committed)
+# Godot 4: generated cache (created on open or by `godot --headless --import`)
 .godot/
 *.godot/
+.import/
+build/
+
+# Exports
+bin/
 
 # Godot shader/editor cache artifacts
 *.vulkan.cache
 *.cache
+
+# Local, never published
+private/
+.superpowers/
+
+# OS
+Thumbs.db
+.DS_Store
