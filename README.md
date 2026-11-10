@@ -43,6 +43,16 @@ es el principal), `ui/` (título, pausa, puntos y shaders de pantalla), `global/
 La versión original para Godot 3.2 (`arkanoid.g322`) y unos niveles antiguos sin usar se
 eliminaron del árbol; siguen en el historial de git.
 
+## Pruebas
+
+Comprobaciones de la lógica del juego (puntuación, menú de pausa), sin ventana:
+
+```bash
+godot --headless --path goretro.g3 --script res://tests/test_game.gd
+```
+
+Sale con código 0 si todo está bien.
+
 ## Exportar
 
 `goretro.g3/export_presets.cfg` trae un preset para Linux/X11 (salida en `bin/`, que no se

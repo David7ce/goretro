@@ -12,6 +12,7 @@ const COLORS = {
 @export var color = "red"
 var life = 1
 var hits = 0
+var dead = false
 
 @onready var sprite = $sprite
 
@@ -32,11 +33,15 @@ func play_effect():
 	return effect
 
 func hit():
+	# The ball can touch a block on several physics frames while it fades out;
+	# it must score once, and the collider must stop answering straight away.
+	if dead:
+		return
 	hits += 1
 	var effect = play_effect()
 	if hits >= life:
-		if Points.current_score > 0:
-			$shape.disabled = true
+		dead = true
+		$shape.set_deferred("disabled", true)
 		Points.inc_current_score(10)
 		# Esperar un instante para que se vea el efecto antes de borrarlo
 		await effect.finished

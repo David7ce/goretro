@@ -6,7 +6,6 @@ const PADDLE_VELOCITY_TRANSFER = 0.4
 const PADDLE_MAX_BOUNCE_ANGLE_DEG = 60.0
 const PADDLE_HALF_WIDTH = 45.0
 
-@onready var ball = "."
 @onready var sound_block = $sound/block
 @onready var sound_wall = $sound/wall
 @onready var sound_gameover = $sound/gameover
@@ -20,7 +19,7 @@ func _ready():
 	max_speed = base_speed * MAX_SPEED_MULTIPLIER
 	current_speed = base_speed
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	for body in get_colliding_bodies():
 		if body.is_in_group("block"):
 			sound_block.pitch_scale = randf_range(1, 1.2)

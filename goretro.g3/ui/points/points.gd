@@ -7,9 +7,9 @@ extends Node2D
 func _ready():
 	level.text = ""
 
-func _process(delta):
+func _process(_delta):
 	score.text = "SCORE " + str(Points.current_score)
 	high.text = "HIGH " + str(Points.high_score)
 
-func set_level_name(name):
-	level.text = "LEVEL " + name
+func set_level_name(level_name):
+	level.text = "LEVEL " + level_name

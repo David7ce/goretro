@@ -6,7 +6,7 @@ func _on_continue_pressed():
 func _on_menu_pressed():
 	goto_main_menu()
 
-func _process(delta):
+func _process(_delta):
 	if Input.is_action_just_pressed("game_continue"):
 		continue_game()
 	if Input.is_action_just_pressed("game_quit"):
@@ -18,4 +18,5 @@ func continue_game():
 
 func goto_main_menu():
 	hide()
-	get_tree().change_scene_to_file("res://ui/title.tscn")
+	get_tree().set_pause(false)
+	get_tree().change_scene_to_file("res://ui/title/title.tscn")

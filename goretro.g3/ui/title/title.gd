@@ -9,7 +9,7 @@ func _ready():
 	get_tree().set_pause(false)
 
 
-func _process(delta):
+func _process(_delta):
 	if Input.is_action_just_pressed("game_new"):
 		start_new_game()
 	if Input.is_action_just_pressed("game_quit"):
